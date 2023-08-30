@@ -1,4 +1,4 @@
-const socket = io("http://localhost:8000", { transports: ["websocket"] });//due to cors error
+const socket = io("http://localhost:8089", { transports: ["websocket"] });//due to cors error
 
 const form=document.getElementById('send-container');
 const messageinput=document.getElementById('msgInp');

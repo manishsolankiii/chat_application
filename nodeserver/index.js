@@ -1,5 +1,10 @@
 //Node server which wil handle the socket io connections
-const io=require('socket.io')(8000);
+require('dotenv').config();
+
+const PORT=process.env.PORT
+const io=require('socket.io')(PORT);
+
+console.log(`PORT: ${PORT}`);
 
 const users={};
 
